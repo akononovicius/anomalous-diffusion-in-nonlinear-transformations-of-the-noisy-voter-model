@@ -4,8 +4,9 @@ This repository contains Python (Jupyter Notebooks), C and Shell code, which
 was used to generate figures in a forthcoming paper [1].
 
 All C programs are contained within `crun` directory. They can be compiled
-by running `crun/compile-all.sh` script (dependencies GCC, GSL). After
-compilation all programs can be run by executing `crun/run-all.sh` script.
+by running `crun/compile-all.sh` script (dependencies: GCC, GSL). After
+compilation all programs can be run by executing `crun/run-all.sh` script
+(dependencies: GNU parallel, paste).
 C programs will generate multiple temporary `*.series` files, which will be
 later combined into `*.data` files, which will be stored in the `data`
 directory (it will be created as needed).
@@ -18,7 +19,8 @@ to make the simulation run faster (minutes instead of weeks).
 rows. All runs within same file were obtained using the same parameter set.
 For actual parameter set see the corresponding `*.c` file.
 
-`*.data` files are analyzed by `convert-*.ipynb` notebooks. These notebooks
+`*.data` files are analyzed by `convert-*.ipynb` notebooks
+(dependencies: numpy, scipy, matplotlib). These notebooks
 will convert data into `*.csv` files, which can be then used to produce figures
 from the paper (either using matplotlib, gnuplot or any other graphing library).
 Columns of the `*.csv` file correspond to:
