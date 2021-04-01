@@ -1,7 +1,7 @@
 # Anomalous diffusion in nonlinear transformations of the noisy voter model
 
 This repository contains Python (Jupyter Notebooks), C and Shell code, which
-was used to generate figures in a forthcoming paper [1].
+was used to generate figures in [1].
 
 All C programs are contained within `crun` directory. They can be compiled
 by running `crun/compile-all.sh` script (dependencies: GCC, GSL). After
@@ -40,4 +40,4 @@ file for legal details). That said, referencing the paper would be appreciated.
 
 ## Reference
 
-[1] R. Kazakevičius, A. Kononovicius. *Anomalous diffusion in nonlinear transformations of the noisy voter model.*
+[1] 1. R. Kazakevičius, A. Kononovicius. *Anomalous diffusion in nonlinear transformations of the noisy voter model*. Physical Review E **103**: 032154 (2021). [doi: 10.1103/PhysRevE.103.032154](https://doi.org/10.1103/PhysRevE.103.032154). [arXiv:2011.02927 [cond-mat.stat-mech]](https://arxiv.org/abs/2011.02927).
